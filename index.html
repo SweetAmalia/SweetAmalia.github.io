@@ -1,28 +1,76 @@
-<body style="background: color #EDEDF0;">
-
-<div>
-  <title>Ling's Portfolio</title>
-
-  <head>
+<head>
+<title>Ling's Portfolio</title>
 <style>
+  body {
+    background-color: #DCDCDD;
+    margin: 0;
+    padding: 0;
+  }
+
+header {
+ text-align: center;
+ border: 1px solid #EDEDF0;
+ padding: 0;
+ margin: 0;
+}
+
 h1 {
-  background-color: #C5C3C6;
   color: #003E67;
   font-family: arial;
   font-size: 300%;
-  border: 1px solid #46494C;
-  margin: 100px solid #ffffff;
-  padding: 50px;
+  padding: 30px;
 }
 p {
   color: #4C5C68;
   font-family: arial;
   font-size: 160%;
+  padding: 0;
+}
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #46494C;
+  border: 1px solid #4C5C68;
+}
+
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover {
+  background-color: #003E67;
+  color: #DCDCDD;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #46494C;
+  color: #f1f1f1;
+  border-top: 1px solid #4C5C68;
 }
 </style>
 </head>
- <h1>Welcome to My Website</h1>
- <p>This is a simple paragraph to test. </p>
 
+<header>
+ <h1>Welcome to My Website</h1>
+ </header>
+
+ <ul class="topnav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">WhoAmI</a></li>
+  <li><a href="#">Blogs</a></li>
+  <li><a href="#">Projects</a></li>
+</ul>
+
+ <p>This is a simple paragraph to test. </p>
+<footer>
+  <p>&copy; 2024 Ling's Portfolio. All rights reserved.</p>
+</footer>
 </div>
 </body>
