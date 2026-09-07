@@ -27,13 +27,19 @@ h1 {
   font-family: arial;
   font-size: 300%;
 }
+
+h2 {
+  color: #003E67;
+  font-family: arial;
+  font-size: 200%;
+}
+
 p {
   color: #4C5C68;
   font-family: arial;
   font-size: 160%;
 }
 ul.topnav {
-  text-align: center;
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -43,7 +49,6 @@ ul.topnav {
 }
 
 ul.topnav li a {
-  text-align: center;
   display: block;
   color: #f1f1f1;
   padding: 14px 16px;
@@ -64,6 +69,20 @@ section {
 .introduction {
   width: 100%;
   text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-interests {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-education {
+  width: 100%;
+  display: flex;
 }
 
 article {
@@ -71,18 +90,18 @@ article {
   background-color: #DCDCDD;
   border: 1px solid #4C5C68;
   margin: 10px;
-  
+  display: flex;
 }
-
-
 
 footer {
   text-align: center;
-  padding: 10px;
   background-color: #46494C;
   color: #f1f1f1;
   border-top: 1px solid #4C5C68;
+  width: 100%;
+  height: 100px;
 }
+
 </style>
 </head>
 <main>
@@ -99,47 +118,54 @@ footer {
 
  <section class="introduction">
   <article>
-    <img src="./Media/name.png" alt="Description of the image" width="100" height="200"> 
-    <h2>Introduction</h2>
-    <p>Welcome to my portfolio website! Here you can find information about my projects, blogs, and more.</p>
+  <img src="./Media/apolocheese.jpg" alt="Cat apologizing holding cheese with sad face" style="width:400px;height:300px;float:left;padding-right:20px;"> 
+  <section>
+    <h2>My Introduction</h2>
+   <p>Welcome to my portfolio website! Here you can find information about my projects, blogs, and more.</p>
+  </section>
   </article>
 </section>
 
-
-<section>
+<section class="experience-education">
 <article>
-  <h2>Article 2</h2>
-<p> gewoon dingen testen</p>
+  <h2>Ervaring</h2>
+<ul>
+  <li>blah 1</li>
+  <li>blah 2</li>
+  <li>blah 3</li>
+</ul>
 </article>
 
 <article>
-<p> gewoon dingen testen</p>
-</article>
-</section>
-
-<section>
-<article>
-  <h2>Article 2</h2>
-<p> gewoon dingen testen</p>
-</article>
-
-<article>
-  <h2>Article 2</h2>
-<p> gewoon dingen testen</p>
+  <h2>Opleiding</h2>
+<ul>
+  <li>blah 1</li>
+  <li>blah 2</li>
+  <li>blah 3</li>
+</ul>
 </article>
 </section>
 
-<section>
+<section class="skills-interests">
 <article>
-  <h2>Article 2</h2>
-<p> gewoon dingen testen</p>
+  <h2>Vaardigheid</h2>
+<ul>
+  <li>blah 1</li>
+  <li>blah 2</li>
+  <li>blah 3</li>
+</ul>
 </article>
 
 <article>
-  <h2>Article 2</h2>
-<p> gewoon dingen testen</p>
+  <h2>Interesse</h2>
+<ul>
+  <li>blah 1</li>
+  <li>blah 2</li>
+  <li>blah 3</li>
+</ul>
 </article>
 </section>
+
 
 
 <footer>
