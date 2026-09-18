@@ -91,11 +91,18 @@ h2 {
   font-size: clamp(1rem, 1.5vw, 1.6rem);
 }
 
+h3 {
+  margin: 0;
+  color: #003E67;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.5rem, 1.5vw, 1.4rem);
+}
+
 p {
   margin: 0;
-  color: #4C5C68;
+  color: #2E3336;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1rem, 1.5vw, 1.6rem);
+  font-size: clamp(0.5rem, 1.2vw, 1.3rem);
   line-height: 1.5;
   padding: 0;
   margin-bottom: 20px;
@@ -123,6 +130,7 @@ p {
 
 .introduction-text p {
   margin-bottom: 0;
+  padding: 15px;
 }
 
 .introduction img {
@@ -147,7 +155,7 @@ p {
 .experience-education article {
   margin: 0;
   padding: 20px;
-  background-color: #DCDCDD;
+  background-color: #EDEDF0;
   border: 3px solid #4C5C68;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -157,6 +165,16 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.experience-education p {
+  margin: 0;
+  color: #2E3336;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.3rem, 1.0vw, 1.0rem);
+  line-height: 1.5;
+  padding: 0;
+  margin-bottom: 20px; 
+}
+
 .experience-education ul{
   margin: 5px 0 0;
   padding-left: 20px;
@@ -164,7 +182,7 @@ p {
 
 .experience-education li {
   margin-bottom: 5px;
-  color: #4C5C68;
+  color: #2E3336;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 120%;
 }
@@ -189,6 +207,7 @@ object-fit: cover;
   transition: 0.3s;
   border-radius: 5px;
   border: 2px solid #46494C;
+  background-color: #EDEDF0;
   }
 
   .card:hover {
@@ -217,6 +236,9 @@ object-fit: cover;
   margin-top: 20px;
 }
 
+footer p {
+  color: #EDEDF0;
+}
 
 footer {
   margin-top: 30px;
