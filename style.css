@@ -89,6 +89,7 @@ h2 {
   color: #003E67;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1rem, 1.5vw, 1.6rem);
+  padding: 10px
 }
 
 h3 {
@@ -106,6 +107,24 @@ p {
   line-height: 1.5;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.time-text p {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: clamp(0.3rem, 1.0vw, 1.3rem);
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.explore {
+  color: #000000;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(0.5rem, 1.5vw, 1.0rem);
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .introduction {
@@ -190,7 +209,7 @@ p {
 .projects img {
 display: block;
 width: 100%;
-height: 200px;
+height: 300px;
 object-fit: cover;
 }
 
