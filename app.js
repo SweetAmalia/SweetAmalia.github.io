@@ -40,7 +40,7 @@ async function laadVluchten() {
             data
         );
 
-        const departures = data.flights ?? [];
+        const departures = (data.flights ?? []).slice(0, 2);
 
         console.log(
             'Aantal vluchten:',
