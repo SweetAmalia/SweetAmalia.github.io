@@ -109,6 +109,29 @@ p {
   margin-bottom: 20px;
 }
 
+.vluchten {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.vluchten h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.flight-status {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.flight-list p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
 .time-text p {
   margin: 0;
   font-family: Georgia, 'Times New Roman', Times, serif;
