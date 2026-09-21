@@ -278,6 +278,19 @@ object-fit: cover;
   margin-top: 20px;
 }
 
+.project-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.project-controls input,
+.project-controls select {
+    padding: 10px;
+    font-size: 16px;
+}
+
 footer p {
   color: #EDEDF0;
 }
