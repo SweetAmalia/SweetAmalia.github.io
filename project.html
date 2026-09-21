@@ -25,6 +25,30 @@
 
 <h2>My Projects</h2>
 <p>Here is some of the most recent projects I have worked on this year.</p>
+
+<div class="project-controls">
+    <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search projects..."
+        aria-label="Search projects"
+    >
+
+    <select id="category-filter" aria-label="Filter projects by category">
+        <option value="all">All categories</option>
+        <option value="Webdevelopment">Webdevelopment</option>
+        <option value="Python">Python</option>
+    </select>
+
+    <select id="sort-select" aria-label="Sort projects">
+        <option value="default">Default</option>
+        <option value="name-asc">Name A-Z</option>
+        <option value="name-desc">Name Z-A</option>
+        <option value="year-new">Year newest</option>
+        <option value="year-old">Year oldest</option>
+    </select>
+</div>
+
 <section class="projects" id="projects-container">
 </section>
 </main>
