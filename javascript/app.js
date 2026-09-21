@@ -4,8 +4,8 @@ const flights = document.getElementById('flight-list');
 const API_BASE_URL =
     'https://sweetamalia-github-io.onrender.com';
 
-async function laadVluchten() {
-    status.textContent = 'Vluchten worden geladen...';
+async function loadFlights() {
+    status.textContent = 'Flights are loading...';
     flights.replaceChildren();
 
     try {
@@ -29,7 +29,7 @@ async function laadVluchten() {
             );
 
             throw new Error(
-                `Backend gaf status ${response.status}`
+                `Backend gave status ${response.status}`
             );
         }
 
@@ -43,16 +43,16 @@ async function laadVluchten() {
         const departures = (data.flights ?? []).slice(0, 2);
 
         console.log(
-            'Aantal vluchten:',
+            'Amount of flights:',
             departures.length
         );
 
         if (departures.length === 0) {
             status.textContent =
-                'Geen actuele vertrekkende vluchten gevonden.';
+                'No actual departing flights found.';
 
             flights.textContent =
-                'Geen vertrekkende vluchten gevonden.';
+                'No flights departing found.';
 
             return;
         }
@@ -62,7 +62,7 @@ async function laadVluchten() {
 
             const destination =
                 flight.route?.destinations?.join(', ') ||
-                'Onbekend';
+                'Unknown';
 
             const time =
                 flight.scheduleDateTime
@@ -72,13 +72,13 @@ async function laadVluchten() {
                         hour: '2-digit',
                         minute: '2-digit'
                     })
-                    : 'Onbekend';
+                    : 'Unknown';
 
             const gate =
-                flight.gate || 'Onbekend';
+                flight.gate || 'Unknown';
 
             item.textContent =
-                `${flight.flightName ?? 'Onbekend'} — ` +
+                `${flight.flightName ?? 'Unknown'} — ` +
                 `${destination} — ` +
                 `${time} — Gate ${gate}`;
 
@@ -86,20 +86,20 @@ async function laadVluchten() {
         });
 
         status.textContent =
-            `Actuele vertrekkende vluchten (${departures.length}):`;
+            `Departing flights (${departures.length}):`;
 
     } catch (error) {
         console.error(
-            'Fout bij laden van vluchten:',
+            'Error loading flights:',
             error
         );
 
         status.textContent =
-            'Fout bij het laden van de vluchten.';
+            'Error while loading flights.';
 
         flights.textContent =
             error.message;
     }
 }
 
-laadVluchten();
+loadFlights();
