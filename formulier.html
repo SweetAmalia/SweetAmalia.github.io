@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contactformulier</title>
+</head>
+<body>
+	<form id="contact-form" action="#" method="post">
+		<label for="naam">Naam</label>
+		<input type="text" id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
+        <span id="naam-error" role="alert"></span>
+
+		<label for="email">E-mail</label>
+		<input type="email" id="email" required aria-describedby="email-error" aria-invalid="false">
+        <span id="email-error" role="alert"></span>
+
+		<label for="bericht">Bericht</label>
+		<textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria-invalid="false"></textarea>
+        <span id="bericht-error" role="alert"></span>
+
+		<button type="submit">Versturen</button>
+        <div id="form-status" aria-live="polite"></div>
+	</form>
+
+	<script src="./form.js"></script>
+</body>
+</html>
