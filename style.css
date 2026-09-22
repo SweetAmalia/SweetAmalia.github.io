@@ -265,6 +265,12 @@ object-fit: cover;
   flex-direction: column;
 }
 
+.blogs h3 {
+  color: #000000;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-bottom: 10px;
+}
+
 .blogs .card {
   width: 100%;
   position: relative;
@@ -276,6 +282,76 @@ object-fit: cover;
   display: block;
   text-align: right;
   margin-top: 20px;
+  color: #000000;
+}
+
+.blog-post { 
+  width: min(100%, 900px); 
+  margin: 30px auto; 
+  overflow: hidden; 
+}
+
+.blog-header { 
+  padding: clamp(5px, 5vw, 5px); 
+  border-bottom: 3px solid #4C5C68; 
+  background-color: #DCDCDD;
+  margin-bottom: 30px;
+}
+
+.blog-intro { 
+  font-size: clamp(1rem, 1.5vw, 1.2rem); 
+  max-width: 750px; 
+  margin-bottom: 15px; 
+}
+
+.blog-date { 
+  color: #000000; 
+  font-size: 0.9rem; 
+  margin-bottom: 0; 
+}
+
+.blog-section h2 { 
+  padding: 5px; 
+  margin-top: 20px; 
+  margin-bottom: 5px;
+}
+
+.blog-section p { 
+  margin-bottom: 10px; 
+}
+
+.blog-section img { 
+  display: block; 
+  width: 90%; 
+  max-height: 500px; 
+  object-fit: fill; 
+  border: 2px solid #4C5C68; 
+  border-radius: 5px; 
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.back-to-top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: auto 20px 20px 20px;
+  border: 2px solid #4C5C68;
+  border-radius: 50%;
+  background-color: #46494C;
+  color: #EDEDF0;
+  text-align: center;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 36px;
+
+  transition: 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #003E67;
+  color: #DCDCDD;
 }
 
 .project-controls {
