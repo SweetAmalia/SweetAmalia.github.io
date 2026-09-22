@@ -331,6 +331,17 @@ object-fit: cover;
   margin-bottom: 15px;
 }
 
+.left-col video {
+  max-width: 90%;
+}
+
+.project-header { 
+  padding: clamp(5px, 5vw, 5px); 
+  border-bottom: 3px solid #4C5C68; 
+  background-color: #DCDCDD;
+  margin-bottom: 30px;
+}
+
 .back-to-top {
   display: block;
   width: 40px;
