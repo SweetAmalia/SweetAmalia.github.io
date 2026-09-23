@@ -378,6 +378,141 @@ object-fit: cover;
     font-size: 16px;
 }
 
+.contact-page {
+  width: min(100% - 20px, 1200px);
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.contact-header {
+  max-width: 700px;
+  margin: 0 auto 25px;
+  padding: 10px 5px 20px;
+  border-bottom: 3px solid #4C5C68;
+  text-align: center;
+  }
+
+.contact-header h1 {
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  margin-bottom: 0;
+  color: #2E3336;
+  line-height: 1.6;
+}
+
+#contact-form {
+  width: min(100%, 650px);
+  margin: 0 auto 30px;
+  padding: clamp(20px, 4vw, 35px);
+  background-color: #EDEDF0;
+  border: 3px solid #4C5C68;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #003E67;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border: 2px solid #4C5C68;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #2E3336;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+
+#contact-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #003E67;
+  box-shadow: 0 0 0 3px rgba(0, 62, 103, 0.2);
+}
+
+
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #6B747A;
+  opacity: 1;
+}
+
+
+#contact-form span[role="alert"] {
+  display: block;
+  margin-bottom: 12px;
+  color: #A32121;
+  font-size: 0.9rem;
+}
+
+
+#contact-form input[aria-invalid="true"],
+#contact-form textarea[aria-invalid="true"] {
+  border-color: #A32121;
+}
+
+
+#contact-form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: 2px solid #4C5C68;
+  border-radius: 4px;
+  background-color: #46494C;
+  color: #EDEDF0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+
+#contact-form button[type="submit"]:hover,
+#contact-form button[type="submit"]:focus-visible {
+  background-color: #003E67;
+  color: #DCDCDD;
+}
+
+
+#contact-form button[type="submit"]:focus-visible {
+  outline: 3px solid #003E67;
+  outline-offset: 3px;
+}
+
+/* Form status message */
+
+#form-status {
+  margin-top: 15px;
+  color: #003E67;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 footer p {
   color: #EDEDF0;
 }

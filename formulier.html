@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
 <header>
   <nav>
     <a href="index.html" class="logo">Contact</a>
@@ -23,25 +24,33 @@
 </header>
 
 <main>
-<body>
+<section class="contact-header">
+      <h1>Get in Touch</h1>
+
+      <p>
+        Have a question, want to discuss a project, or simply want to connect?
+        Feel free to send me a message using the form below.
+      </p>
+    </section>
+
 	<form id="contact-form" action="#" method="post">
 		<label for="naam">Name</label>
-		<input type="text" id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
-        <span id="naam-error" role="alert"></span>
+		<input type="text" id="name" required minlength="2" aria-describedby="name-error" aria-invalid="false">
+        <span id="name-error" role="alert"></span>
 
 		<label for="email">E-mail</label>
 		<input type="email" id="email" required aria-describedby="email-error" aria-invalid="false">
         <span id="email-error" role="alert"></span>
 
-		<label for="bericht">Extra</label>
-		<textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria-invalid="false"></textarea>
-        <span id="bericht-error" role="alert"></span>
+		<label for="message">Extra</label>
+		<textarea id="message" required minlength="10" aria-describedby="message-error" aria-invalid="false"></textarea>
+        <span id="message-error" role="alert"></span>
 
 		<button type="submit">Submit</button>
         <div id="form-status" aria-live="polite"></div>
 	</form>
 
-	<script src="./form.js"></script>
+	<script src="./javascript/form.js"></script>
 </main>
 
 <footer>
@@ -50,3 +59,4 @@
 
 </body>
 </html>
+

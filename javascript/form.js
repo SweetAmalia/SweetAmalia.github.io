@@ -1,33 +1,33 @@
 const form = document.querySelector("#contact-form");
 
-const velden = [
-    {id: "naam", boodschap: "Vul minimaal 2 tekens in." },
-    {id: "email", boodschap: "Vul een geldige e-mail in." },
-    {id: "bericht", boodschap: "Schrijf minimaal 10 tekens." },
+const fields = [
+    {id: "name", message: "Vul minimaal 2 tekens in." },
+    {id: "email", message: "Vul een valide e-mail in." },
+    {id: "message", message: "Schrijf minimaal 10 tekens." },
 ];
 
-function valideerVeld(veld) {
-    const input = document.querySelector(`#${veld.id}`);
-    const foutmelding = document.querySelector(`#${veld.id}-error`);
-    const geldig = input.checkValidity();
+function validateField(field) {
+    const input = document.querySelector(`#${field.id}`);
+    const mistake = document.querySelector(`#${field.id}-error`);
+    const valid = input.checkValidity();
 
-    input.setAttribute("aria-invalid", String(!geldig));
-    foutmelding.textContent = geldig ? "" : veld.boodschap;
-    return geldig;
+    input.setAttribute("aria-invalid", String(!valid));
+    mistake.textContent = valid ? "" : field.message;
+    return valid;
 }
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const alleGeldig = velden.map(valideerVeld).every(Boolean);
+    const allevalid = fields.map(validateField).every(Boolean);
     const status = document.querySelector("#form-status");
 
-    if (!alleGeldig) {
-        status.textContent = "Er zijn nog fouten in het formulier.";
+    if (!allevalid) {
+        status.textContent = "There are still errors in the form.";
         return;
     }
 
-    status.textContent = "Bericht verzonden! Bedankt.";
+    status.textContent = "Your message has been sent, Thank you!";
     form.reset();
 });
 
