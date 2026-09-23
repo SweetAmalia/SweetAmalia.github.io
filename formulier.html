@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contactformulier</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ling's Portfolio Website">
+  <meta name="author" content="Ling">
+  <title>Contact | Ling's Portfolio</title>
+  <meta name="keywords" content="Portfolio, Ling, Web Development, Projects, Blogs">
+  <link rel="stylesheet" href="style.css">
 </head>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">Contact</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="blog.html">Blogs</a></li>
+      <li><a href="formulier.html">Contact me!</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
 <body>
 	<form id="contact-form" action="#" method="post">
-		<label for="naam">Naam</label>
+		<label for="naam">Name</label>
 		<input type="text" id="naam" required minlength="2" aria-describedby="naam-error" aria-invalid="false">
         <span id="naam-error" role="alert"></span>
 
@@ -15,14 +33,20 @@
 		<input type="email" id="email" required aria-describedby="email-error" aria-invalid="false">
         <span id="email-error" role="alert"></span>
 
-		<label for="bericht">Bericht</label>
+		<label for="bericht">Extra</label>
 		<textarea id="bericht" required minlength="10" aria-describedby="bericht-error" aria-invalid="false"></textarea>
         <span id="bericht-error" role="alert"></span>
 
-		<button type="submit">Versturen</button>
+		<button type="submit">Submit</button>
         <div id="form-status" aria-live="polite"></div>
 	</form>
 
 	<script src="./form.js"></script>
+</main>
+
+<footer>
+  <p>&copy; 2026 Ling's Portfolio. </p>
+</footer>
+
 </body>
 </html>
